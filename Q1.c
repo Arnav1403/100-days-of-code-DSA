@@ -6,15 +6,15 @@ int main() {
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    printf("Enter the elements:\n");
+    printf("Enter %d elements:\n", n);
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter the position to insert (1 to %d): ", n + 1);
+    printf("Enter position (1-based index): ");
     scanf("%d", &pos);
 
-    printf("Enter the element to insert: ");
+    printf("Enter element to insert: ");
     scanf("%d", &x);
 
     for (i = n - 1; i >= pos - 1; i--) {
